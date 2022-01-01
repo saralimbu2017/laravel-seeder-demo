@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class EmployeeSeeder extends Seeder
 {
@@ -14,12 +15,16 @@ class EmployeeSeeder extends Seeder
     public function run()
     {
         //
-        Employee::create([
-            'name' => 'John Doe',
-            'email' => 'doejohn@gmail.com',
-            'phone' => '1234567890',
-            'department' => 'hr',
-            'dob' => '2010-01-03',
+        // Employee::create([
+           
+        // ]);
+        DB::table('employees')->insert([
+			
+                'name' => 'John Doe',
+                'email' => 'doejohn@gmail.com',
+                'phone' => '1234567890',
+                'department' => 'hr',
+                'dob' => '2010-01-03'
         ]);
     }
 }
