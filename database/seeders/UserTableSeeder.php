@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class UsersTableSeeder extends Seeder
+class UserTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +14,5 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         //
-        DB::table('users');
     }
 }
